@@ -25,14 +25,14 @@ function App() {
   return (
     <div className="container">
       <div className="heading">
-     <h1> Hello World</h1>
+     <h1> To Do List</h1>
     </div>
-    <InputArea 
+    <InputArea placeholder="Enter the Input"  
      additems={additems} />
      <div>
       <ul>
         {items.map((item, index) => {
-          return(
+          return( 
             <ToDoItem  key={index} text={item} deleteItem={deleteItem}
             id={index}/>
           )
