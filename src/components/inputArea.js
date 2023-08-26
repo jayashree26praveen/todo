@@ -9,7 +9,7 @@ const InputArea = (props) => {
     }
   return (
     <div className="form">
-        <input type="text" onChange={handleChange} value={inputText}/>
+        <input type="text" placeholder='enter input here'   onChange={handleChange} value={inputText}/>
         <button onClick={()=>
         {
             props.additems(inputText);
